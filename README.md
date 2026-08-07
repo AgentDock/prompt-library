@@ -1,51 +1,52 @@
-# 💭 Prompt Library
+# AgentDock Prompt Library
 
-[![Library Status](https://img.shields.io/badge/Status-Active-green)](https://github.com/AgentDock/AgentDock)
-[![Prompts Count](https://img.shields.io/badge/Prompts-50+-blue)](https://github.com/AgentDock/AgentDock)
+Source files for the [AgentDock Prompt Library](https://agentdock.ai/prompt-library).
+Every prompt on the site lives here as an MDX file, one file per prompt,
+organized by category. The library keeps growing, and this repository is
+always the source.
 
-## 🎯 Production-Ready Prompt Collections
+## How a prompt works
 
-*[Placeholder Content]* Curated collection of high-performance prompts, templates, and patterns optimized for various AI agent scenarios and use cases.
+Open any file. The top is frontmatter, the rest is the prompt itself. The parts
+you fill in are wrapped in brackets:
 
-### 📂 Categories *[Example Structure]*
+```text
+I need to create an action plan for this goal: [GOAL_DESCRIPTION]
 
-#### 🔍 **Research & Analysis**
-- Placeholder for research prompts
-- Data analysis patterns
-- Information synthesis templates
+The timeframe for completion is [TIMEFRAME:select:1 week,2 weeks,1 month,3 months,6 months,1 year]
+```
 
-#### 🧠 **Reasoning & Logic**
-- Step-by-step reasoning chains
-- Critical thinking frameworks
-- Problem decomposition patterns
+Swap the brackets for your own details and paste the whole thing into a chat.
+A plain `[VARIABLE]` takes free text. A `select` variable lists the values it
+expects.
 
-#### 🎨 **Creative & Generation**
-- Content creation templates
-- Creative writing prompts
-- Ideation frameworks
+Most files carry demo links in their frontmatter: the same prompt already run
+in ChatGPT, Claude, Perplexity, and Qwen, so you can read real output before
+you spend your own tokens.
 
-#### 🛠️ **Tool Integration**
-- Multi-tool orchestration prompts
-- API interaction patterns
-- Workflow coordination templates
+## Layout
 
-#### 📊 **Evaluation & Testing**
-- Quality assessment prompts
-- Performance evaluation templates
-- Testing scenario generators
+Each folder is a category, each file is a prompt. The path is the page:
+`business/action-plan-generator.mdx` lives at
+[agentdock.ai/prompt-library/business/action-plan-generator](https://agentdock.ai/prompt-library/business/action-plan-generator).
+
+## Frontmatter
+
+| Field | What it holds |
+|-------|---------------|
+| `title`, `description` | What the prompt does |
+| `slug` | Category and page path |
+| `tags` | Search and related-prompt matching |
+| `agentdockUrl` | The hosted page for this prompt |
+| `chatgptDemoUrl`, `claudeDemoUrl`, ... | Example runs in ChatGPT, Claude, Perplexity, and Qwen |
+
+## License
+
+[CC BY 4.0](./LICENSE). Use the prompts anywhere, including commercially.
+Copies and adaptations must credit AgentDock and link back to this repository
+or [agentdock.ai/prompt-library](https://agentdock.ai/prompt-library).
 
 ---
 
-### 🏷️ Prompt Categories
-
-| Category | Count | Best For |
-|----------|-------|----------|
-| **Research** | 15+ | Data gathering & analysis |
-| **Reasoning** | 12+ | Complex problem solving |
-| **Creative** | 10+ | Content & idea generation |
-| **Tools** | 8+ | Multi-step workflows |
-| **Evaluation** | 5+ | Quality assessment |
-
----
-
-*Part of the [AgentDock Content Hub](../README.md)* 
+These files moved here from [AgentDock/AgentDock](https://github.com/AgentDock/AgentDock)
+with their commit history intact.
