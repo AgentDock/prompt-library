@@ -2,16 +2,15 @@
 
 Source files for the [AgentDock Prompt Library](https://agentdock.ai/prompt-library).
 Every prompt on the site lives here as an MDX file, one file per prompt,
-organized by category. The library keeps growing, and this repository is
-always the source.
+organized by category. New prompts land here first and sync to the site.
 
 ## How a prompt works
 
 One file, one prompt. The top is frontmatter, the rest is the prompt itself,
 ready to paste into ChatGPT, Claude, Gemini, or any model you use.
 
-Some prompts are complete as written: copy, paste, go. Others are templates
-with bracketed variables for the details only you know:
+Some prompts are complete as written and paste straight in. Others are
+templates with bracketed variables for your own details:
 
 ```text
 I need to create an action plan for this goal: [GOAL_DESCRIPTION]
@@ -20,8 +19,8 @@ The timeframe for completion is [TIMEFRAME:select:1 week,2 weeks,1 month,3 month
 ```
 
 A plain `[VARIABLE]` takes free text. A `select` variable lists the values it
-expects. The same format carries chat prompts and generative image or video
-prompts alike.
+expects. The format covers chat prompts as well as image and video generation
+prompts.
 
 Many files carry demo links in their frontmatter: the same prompt already run
 in ChatGPT, Claude, Perplexity, and Qwen, so you can read real output before
@@ -51,5 +50,5 @@ or [agentdock.ai/prompt-library](https://agentdock.ai/prompt-library).
 
 ---
 
-These files moved here from [AgentDock/AgentDock](https://github.com/AgentDock/AgentDock)
-with their commit history intact.
+These files started in the original AgentDock repository and moved here with
+their commit history intact.
