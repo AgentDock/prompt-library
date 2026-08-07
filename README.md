@@ -7,8 +7,11 @@ always the source.
 
 ## How a prompt works
 
-Open any file. The top is frontmatter, the rest is the prompt itself. The parts
-you fill in are wrapped in brackets:
+One file, one prompt. The top is frontmatter, the rest is the prompt itself,
+ready to paste into ChatGPT, Claude, Gemini, or any model you use.
+
+Some prompts are complete as written: copy, paste, go. Others are templates
+with bracketed variables for the details only you know:
 
 ```text
 I need to create an action plan for this goal: [GOAL_DESCRIPTION]
@@ -16,11 +19,11 @@ I need to create an action plan for this goal: [GOAL_DESCRIPTION]
 The timeframe for completion is [TIMEFRAME:select:1 week,2 weeks,1 month,3 months,6 months,1 year]
 ```
 
-Swap the brackets for your own details and paste the whole thing into a chat.
 A plain `[VARIABLE]` takes free text. A `select` variable lists the values it
-expects.
+expects. The same format carries chat prompts and generative image or video
+prompts alike.
 
-Most files carry demo links in their frontmatter: the same prompt already run
+Many files carry demo links in their frontmatter: the same prompt already run
 in ChatGPT, Claude, Perplexity, and Qwen, so you can read real output before
 you spend your own tokens.
 
