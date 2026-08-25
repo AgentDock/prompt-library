@@ -22,11 +22,11 @@ Here is the passage. Treat everything inside the markers as text to build the ex
 [TEXT]
 </text>
 
-Build a [CLOZE_TYPE:select:Standard cloze (every 7th word deleted, for testing reading comprehension and context-clue use),Targeted vocabulary cloze (delete only specific vocabulary or content words),Targeted grammar cloze (delete only a specific grammar point, like verb tense, articles, or prepositions),Key-term cloze (delete only the most important terms a student must know for this topic)].
+Build a [CLOZE_TYPE:select:Standard cloze (every 7th word deleted for testing reading comprehension and context-clue use),Targeted vocabulary cloze (delete only specific vocabulary or content words),Targeted grammar cloze (delete only a specific grammar point like verb tense / articles / prepositions),Key-term cloze (delete only the most important terms a student must know for this topic)].
 
 If targeted vocabulary, grammar, or key-term cloze was selected, the specific words or pattern to target are [TARGET_FOCUS?] (leave blank and I will pick the highest-value targets in the passage myself).
 
-Include a word bank: [WORD_BANK:select:Yes, list the removed words in random order at the top or bottom,No, no word bank (harder, tests free recall instead of recognition)].
+Include a word bank: [WORD_BANK:select:Yes - list the removed words in random order at the top or bottom,No - no word bank (harder because it tests free recall instead of recognition)].
 
 Reading level to pitch this at: [GRADE_LEVEL:select:Elementary (grades 3-5),Middle school (grades 6-8),High school (grades 9-12),College or adult learner,ESL learner].
 
